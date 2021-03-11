@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: red 2px solid;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Moonglade;
+  src: url(../css/fonts/MoongladeDemoBold-jOzM.ttf);
+}
+
+@font-face {
+  font-family: PoppinsReg;
+  src: url(../css/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../css/fonts/Poppins/Poppins-Bold.ttf);
+}

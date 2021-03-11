@@ -1,0 +1,31 @@
+.HomeSection {
+  height: 100vh;
+  background-color: #eee2dc;
+  width: 100%;
+
+  .rightSide {
+    width: 600px;
+    float: right;
+    margin-top: 250px;
+
+    .homeTitle {
+      font-family: PoppinsBold;
+      font-size: 54px;
+    }
+
+    .homeSubtitle {
+      font-family: PoppinsReg;
+      font-size: 25px;
+      width: 360px;
+
+      .emphasis {
+        font-family: PoppinsBold;
+      }
+    }
+
+    button {
+      width: 135px;
+      height: 54px;
+    }
+  }
+}

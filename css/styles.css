@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Moonglade;
+  src: url(../css/fonts/MoongladeDemoBold-jOzM.ttf);
+}
+@font-face {
+  font-family: PoppinsReg;
+  src: url(../css/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../css/fonts/Poppins/Poppins-Bold.ttf);
+}
+.navWrapper {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  z-index: 20;
+}
+.navWrapper .logo {
+  position: absolute;
+  left: 30px;
+}
+.navWrapper .logo img {
+  width: 166px;
+  height: 96px;
+}
+.navWrapper .links {
+  position: absolute;
+  margin-top: 13px;
+  right: 30px;
+  display: flex;
+  height: 33px;
+  width: 700px;
+}
+.navWrapper .links a {
+  font-family: PoppinsReg;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+  justify-content: space-between;
+}
+.navWrapper .links span {
+  width: 30px;
+}
+.navWrapper .links #home,
+.navWrapper .links #connect,
+.navWrapper .links #shout {
+  border-bottom: 3px solid #ac3b61;
+}
+.navWrapper .links #about,
+.navWrapper .links #tech {
+  border-bottom: 3px solid #173c69;
+}
+.navWrapper .links #home:active {
+  background-color: #ac3b61;
+  color: white;
+}
+.navWrapper .links #connect:active {
+  background-color: #ac3b61;
+  color: white;
+}
+.navWrapper .links #shout:active {
+  background-color: #ac3b61;
+  color: white;
+}
+.navWrapper .links #about:active {
+  background-color: #173c69;
+  color: white;
+}
+.navWrapper .links #tech:active {
+  background-color: #173c69;
+  color: white;
+}
+
+.HomeSection {
+  height: 100vh;
+  background-color: #eee2dc;
+  width: 100%;
+}
+.HomeSection .rightSide {
+  width: 600px;
+  float: right;
+  margin-top: 250px;
+}
+.HomeSection .rightSide .homeTitle {
+  font-family: PoppinsBold;
+  font-size: 54px;
+}
+.HomeSection .rightSide .homeSubtitle {
+  font-family: PoppinsReg;
+  font-size: 25px;
+  width: 360px;
+}
+.HomeSection .rightSide .homeSubtitle .emphasis {
+  font-family: PoppinsBold;
+}
+.HomeSection .rightSide button {
+  width: 135px;
+  height: 54px;
+}
+
+.AboutSection {
+  height: 100vh;
+  background-color: #AC3B61;
+}
+
+.sub1 {
+  max-height: 400px;
+  height: 100%;
+  background-image: url(../assets/images/section1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub2 {
+  max-height: 200px;
+  height: 100%;
+  background-color: #173C69;
+}
+
+.sub3 {
+  max-height: 200px;
+  height: 100%;
+  background-color: #AC3B61;
+  position: relative;
+}
+.sub3 img {
+  width: 528px;
+  height: 161px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0px;
+  right: 0px;
+  top: 30px;
+  bottom: 0px;
+}
+
+.sub4 {
+  max-height: 200px;
+  height: 100%;
+  background-image: url(../assets/images/section4.jpg);
+  background-image: linear-gradient(to bottom, rgba(172, 59, 97, 0.6), rgba(172, 59, 97, 0.6)), url(../assets/images/section4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ConnectSection {
+  height: 100vh;
+  background-color: #EEE2DC;
+}
+
+.TechSection {
+  height: 100vh;
+  background-color: #173C69;
+}
+
+.ShoutSection {
+  height: 100vh;
+  background-color: #968B8F;
+}
