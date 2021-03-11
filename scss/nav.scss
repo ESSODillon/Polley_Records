@@ -38,7 +38,7 @@
     #home,
     #connect,
     #shout {
-      border-bottom: 3px solid #ac3b61;
+      border-bottom: 3px solid $website_maroon;
     }
 
     #about,
@@ -47,17 +47,17 @@
     }
 
     #home:active {
-      background-color: #ac3b61;
+      background-color: $website_maroon;
       color: white;
     }
 
     #connect:active {
-      background-color: #ac3b61;
+      background-color: $website_maroon;
       color: white;
     }
 
     #shout:active {
-      background-color: #ac3b61;
+      background-color: $website_maroon;
       color: white;
     }
 
