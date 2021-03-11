@@ -1,47 +1,47 @@
 .sub1 {
-    max-height: 400px;
-    height: 100%;
-    background-image: url(../assets/images/section1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  max-height: 400px;
+  height: 100%;
+  background-image: url(../assets/images/section1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sub2 {
-    max-height: 200px;
-    height: 100%;
-    background-color: #173C69;
+  max-height: 200px;
+  height: 100%;
+  background-color: colors.$website_navy;
 }
 
 .sub3 {
-    max-height: 200px;
-    height: 100%;
-    background-color: #AC3B61;
-    position: relative;
+  max-height: 200px;
+  height: 100%;
+  background-color: colors.$website_maroon;
+  position: relative;
 
-    img {
-        width: 528px;
-        height: 161px;
-        position: absolute;
-        margin: 0 auto;
-        left: 0px;
-        right: 0px;
-        top: 30px;
-        bottom: 0px;
-    }
+  img {
+    width: 528px;
+    height: 161px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    bottom: 0px;
+  }
 }
 
 .sub4 {
-    max-height: 200px;
-    height: 100%;
-    background-image: url(../assets/images/section4.jpg);
-    background-image: linear-gradient(
-        to bottom,
-        rgba(172,59,97,.6),
-        rgba(172,59,97,.6)
-        ),
-        url(../assets/images/section4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  max-height: 200px;
+  height: 100%;
+  background-image: url(../assets/images/section4.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(172, 59, 97, 0.6),
+      rgba(172, 59, 97, 0.6)
+    ),
+    url(../assets/images/section4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

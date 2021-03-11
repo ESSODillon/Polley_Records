@@ -1,7 +1,8 @@
 .HomeSection {
   height: 100vh;
-  background-color: #eee2dc;
+  background-color: colors.$website_tan1;
   width: 100%;
+  position: relative;
 
   .rightSide {
     width: 600px;
@@ -26,6 +27,73 @@
     button {
       width: 135px;
       height: 54px;
+      border-radius: 50px;
+      border: none;
+      font-family: PoppinsBold;
+      font-size: 15px;
+      letter-spacing: 0.25px;
+      color: white;
+      margin-right: 25px;
+      margin-top: 20px;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    #homeButton1 {
+      background-color: colors.$website_maroon;
+    }
+
+    #homeButton2 {
+      background-color: colors.$website_navy;
+    }
+  }
+
+  .leftSide {
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+
+    .circles {
+      position: relative;
+
+      .circle1 {
+        position: absolute;
+        border-radius: 50%;
+        top: 50px;
+        max-width: 392px;
+        height: 368px;
+        width: 100%;
+        z-index: 5;
+      }
+
+      .circle2 {
+        position: absolute;
+        right: 0px;
+        border-radius: 50%;
+        max-width: 265px;
+        width: 100%;
+        height: 245px;
+        z-index: 4;
+      }
+
+      .circle3 {
+        position: absolute;
+        top: 175px;
+        right: 0px;
+        border-radius: 50%;
+        max-width: 272px;
+        width: 100%;
+        height: 267px;
+        z-index: 3;
+      }
     }
   }
 }
