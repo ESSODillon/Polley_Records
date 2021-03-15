@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+* button:focus {
+  outline: none;
+}
+* input:focus {
+  outline: none;
+}
+* button:hover {
+  cursor: pointer;
+}
 
 html,
 body {
@@ -131,12 +140,6 @@ p {
   margin-right: 25px;
   margin-top: 20px;
 }
-.HomeSection .rightSide button:focus {
-  outline: none;
-}
-.HomeSection .rightSide button:hover {
-  cursor: pointer;
-}
 .HomeSection .rightSide #homeButton1 {
   background-color: #ac3b61;
 }
@@ -242,4 +245,62 @@ p {
 .ShoutSection {
   height: 100vh;
   background-color: #bab2b5;
+  position: relative;
+}
+.ShoutSection .formWrapper {
+  max-width: 575px;
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 160px;
+  left: 135px;
+}
+.ShoutSection .formWrapper .formHeader {
+  font-family: PoppinsReg;
+  font-size: 54px;
+  color: white;
+  letter-spacing: 1px;
+}
+.ShoutSection .formWrapper .formHeader span {
+  font-family: PoppinsBold;
+}
+.ShoutSection .formWrapper .formSubheader {
+  font-family: PoppinsReg;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 30px;
+}
+.ShoutSection .formWrapper input {
+  width: 100%;
+  height: 75px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-bottom: 33px;
+  font-family: PoppinsReg;
+  padding-left: 25px;
+  border: none;
+}
+.ShoutSection .formWrapper .input3 {
+  height: 180px;
+  padding-bottom: 100px;
+}
+.ShoutSection .formWrapper button {
+  margin-left: 175px;
+  width: 170px;
+  height: 55px;
+  border-radius: 25px;
+  color: white;
+  font-family: PoppinsReg;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  border: none;
+  background-color: #ac3b61;
+}
+.ShoutSection .phoneImage {
+  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }

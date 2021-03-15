@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="sweetalert2.all.min.js"></script>
-    <script src="js/app.js"></script>
+    <!-- CDN File 1 for Sweet Alerts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.15.5/sweetalert2.min.js" integrity="sha512-+uGHdpCaEymD6EqvUR4H/PBuwqm3JTZmRh3gT0Lq52VGDAlywdXPBEiLiZUg6D1ViLonuNSUFdbL2tH9djAP8g==" crossorigin="anonymous"></script>
+    <!-- CDN File 2 for Sweet Alerts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- The JavaScript page for programming Sweet Alerts  -->
+    <script src="js/alerts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     
     <title>Polley Records</title>
@@ -41,7 +45,7 @@
             <div class="rightSide">
                 <h1 class="homeTitle">So, we like records</h1>
                 <p class="homeSubtitle">And we have a funny feeling <span class="emphasis">you</span> like them too.</p>
-                <button href="#section2" id="homeButton1">You're right!</button>
+                <button onclick="displayAlert()" href="#section2" id="homeButton1">You're right!</button>
                 <button id="homeButton2">I'm lame...</button>
             </div>
             <div class="leftSide">
@@ -66,6 +70,27 @@
 
         <div class="sub4"></div>
 
-        <div id="section5" class="ShoutSection"></div>
+        <div id="section5" class="ShoutSection">
+
+            <div class="formWrapper">
+
+                <p class="formHeader">Give us a <span>shout!</span></p>
+
+                <p class="formSubheader">We’ll eagerly wait for you like a lovesick puppy</p>
+
+                <input id="nameForm" class="input1" placeholder="First & Last Name" type="text">
+
+                <input id="emailForm" class="input2" placeholder="Email Address" type="email">
+
+                <input id="messageForm" class="input3" placeholder="Message" type="text">
+
+                <button onclick="submitForm()">Submit</button>  
+            </div>
+
+            <img class="phoneImage" src="/assets/images/phone.png">
+
+            
+
+        </div>
 </body>
 </html>

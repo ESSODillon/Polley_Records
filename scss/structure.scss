@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   // border: red 2px solid;
+
+  button:focus {
+    outline: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
 }
 
 html,
