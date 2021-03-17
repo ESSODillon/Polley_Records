@@ -17,6 +17,35 @@
   max-height: 200px;
   height: 100%;
   background-color: colors.$website_navy;
+  position: relative;
+
+  img {
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 303px;
+    height: 145px;
+  }
+
+  .rightSide {
+    position: absolute;
+    right: 100px;
+    top: 35px;
+    color: white;
+    font-family: PoppinsReg;
+
+
+    h1 {
+      font-size: 40px;
+      span {
+        font-family: PoppinsBold;
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+  }
 }
 
 .sub3 {
@@ -50,4 +79,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    margin-top: 50px;
+    font-family: PoppinsBoldItal;
+    color: white;
+    font-size: 54px;
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -1,4 +1,108 @@
 .ConnectSection {
   height: 100vh;
   background-color: colors.$website_tan1;
+  position: relative;
+
+  h1 {
+    font-family: PoppinsReg;
+    font-size: 54px;
+    position: absolute;
+    right: 149px;
+    top: 120px;
+
+    span {
+      font-family: PoppinsBold;
+      color: colors.$website_navy;
+    }
+  }
+
+  .tea {
+    position: absolute;
+    right: 40px;
+    top: 120px;
+    width: 109px;
+    height: 76px;
+    fill: colors.$website_navy;
+  }
+
+  p {
+    right: 40px;
+    top: 250px;
+    position: absolute;
+    width: 515px;
+    font-size: 25px;
+    font-family: PoppinsReg;
+
+    span {
+      font-family: PoppinsBold;
+    }
+  }
+
+  .iconsRow {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+
+    .pandora {
+      width: 80px;
+      height: 50px;
+      margin-right: -20px;
+    }
+
+    .spotify {
+      width: 50px;
+      height: 50px;
+    }
+
+    .soundcloud {
+      width: 87px;
+      height: 50px;
+    }
+  }
+
+  .slideshowWrapper {
+    
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+    z-index: 6;
+
+    .imgSquare {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 7;
+
+        img {
+        width: 409px;
+        height: 409px;
+        z-index: 7;
+      }
+      
+    }
+    
+    .redSquare {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      width: 409px;
+      height: 409px;
+      z-index: 6;
+      background-color: colors.$website_maroon;
+    }
+
+    .blueSquare {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 409px;
+      height: 409px;
+      z-index: 5;
+      background-color: colors.$website_navy;
+    }
+  }
+  
 }

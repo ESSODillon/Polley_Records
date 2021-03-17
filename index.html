@@ -19,29 +19,19 @@
         <div class="logo"><img src="assets/images/logo.png" alt="Polley Records"></div>
 
         <div class="links">
-                <span id="homeSpan"></span>
-                <a id="home" href="#section1">Home</a>
-                <span id="homeSpan"></span>
+                <div id="home" ><a id="homeLink" href="#section1">Home</a></div>
 
-                <span id="aboutSpan"></span>
-                <a id="about" href="#section2">About Us</a>
-                <span id="aboutSpan"></span>
+                <div id="about" ><a id="aboutLink" href="#section2">About Us</a></div>
 
-                <span id="connectSpan"></span>
-                <a id="connect" href="#section3">Connect</a>
-                <span id="connectSpan"></span>
+                <div id="connect" ><a id="connectLink" href="#section3">Connect</a></div>
 
-                <span id="techSpan"></span>
-                <a id="tech" href="#section4">Tech</a>
-                <span id="techSpan"></span>
+                <div id="tech" ><a id="techLink" href="#section4">Tech</a></div>
 
-                <span id="shoutSpan"></span>
-                <a id="shout" href="#section5">Shout</a> 
-                <span id="shoutSpan"></span>
+                <div id="shout" ><a id="shoutLink" href="#section5">Shout</a></div>
         </div>
     </div>
 
-        <div id="section1" class="HomeSection">
+    <div id="section1" class="HomeSection">
             <div class="rightSide">
                 <h1 class="homeTitle">So, we like records</h1>
                 <p class="homeSubtitle">And we have a funny feeling <span class="emphasis">you</span> like them too.</p>
@@ -55,59 +45,110 @@
                     <img src="assets/images/circle3.jpg" class="circle3">
                 </div>
             </div>
-        </div>
-        <div class="sub1"></div>
+    </div>
 
-        <div id="section2" class="AboutSection">
+    <div class="sub1"></div>
+
+    <div id="section2" class="AboutSection">
             <div class="leftSide">
                 <h1>Our Bread and Butter</h1>
                 <p>We believe in <span>music</span>. And we believe in the <span>magic</span> physical music brings to our lives.</p>
-
-                <div class="imgWrapper"><img src="/assets/images/man.png"></div>
-                
+            </div>
+            
+            <div class="imgWrapper"><img src="/assets/images/man.png"></div>
+            
+            <div class="headerWrapper">
+                <h1>Which gave us an idea</h1>
             </div>
 
             <div class="rightSide">
-                <div class="headerWrapper">
-                    <h1>Which gave us an idea</h1>
-                </div>
+                
                 <p class="explainText">A subscription service that sends you <span>MONTHLY</span> vinyl records!</p>
                 <p class="commentText">Wait... That's awesome!</p>
             </div>
             
+    </div>
+
+    <div class="sub2">
+        <img src="/assets/images/section2.png" alt="">
+
+        <div class="rightSide">
+            <h1>Tell your <span>friends</span> about us!</h1>
+            <p>They sign up and get $10, you get $10, everyone wins</p>
+        </div>
+        
+    </div>
+
+    <div id="section3" class="ConnectSection">
+        <h1>What's your cup of <span>tea?</span></h1>
+        <img class="tea" src="/assets/icons/tea.svg">
+
+        <p>You’ve got taste, and we wanna know <span>all</span> about it. When you create your account, connect and give us an idea.</p>
+
+        <div class="iconsRow">
+            <img class="pandora" src="/assets/icons/pandora.svg">
+            <img class="soundcloud" src="/assets/icons/soundcloud.svg">
+            <img class="spotify" src="/assets/icons/spotify.svg">
         </div>
 
-        <div class="sub2"></div>
+        <div class="slideshowWrapper">
+            <div class="imgSquare">
+                <img src="/assets/albums/Album_1.png">  
+            </div>          
+            <div class="redSquare"></div>
+            <div class="blueSquare"></div>
+        </div>
+    </div>
 
-        <div id="section3" class="ConnectSection"></div>
+    <div class="sub3"><img src="./assets/images/section3.png" alt=""></div>
 
-        <div class="sub3"><img src="./assets/images/section3.png" alt=""></div>
+    <div id="section4" class="TechSection">
+        <h1>No <span>turntable?</span></h1>
 
-        <div id="section4" class="TechSection"></div>
+        <p>No worries, we’ve got you covered. We have players for budget-spenders, enthusiasts, and newbies.</p>
 
-        <div class="sub4"></div>
+        <div class="buttonWrapper">
+            <button id="under150">Under $150</button>
+            <button id="over500">Over $500</button>
+            <button id="recommend">Recommended</button>
+        </div>
+        
 
-        <div id="section5" class="ShoutSection">
-
-            <div class="formWrapper">
-
-                <p class="formHeader">Give us a <span>shout!</span></p>
-
-                <p class="formSubheader">We’ll eagerly wait for you like a lovesick puppy</p>
-
-                <input id="nameForm" class="input1" placeholder="First & Last Name" type="text">
-
-                <input id="emailForm" class="input2" placeholder="Email Address" type="email">
-
-                <input id="messageForm" class="input3" placeholder="Message" type="text">
-
-                <button onclick="submitForm()">Submit</button>  
+        <div class="playerWrapper">
+            <div class="imgWrapper">
+                <img src="/assets/images/player.png" alt="">
             </div>
+            <div class="redCircle"></div>
+            <div class="tanCircle"></div>
+        </div>
 
-            <img class="phoneImage" src="/assets/images/phone.png">
+    </div>
+
+    <div class="sub4">
+        <h1>Let’s get you spinning some tunes!!</h1>
+    </div>
+
+    <div id="section5" class="ShoutSection">
+
+        <div class="formWrapper">
+
+            <p class="formHeader">Give us a <span>shout!</span></p>
+
+            <p class="formSubheader">We’ll eagerly wait for you like a lovesick puppy</p>
+
+            <input id="nameForm" class="input1" placeholder="First & Last Name" type="text">
+
+            <input id="emailForm" class="input2" placeholder="Email Address" type="email">
+
+            <input id="messageForm" class="input3" placeholder="Message" type="text">
+
+            <button onclick="submitForm()">Submit</button>  
+        </div>
+
+        <img class="phoneImage" src="/assets/images/phone.png">
 
             
 
-        </div>
+    </div>
 </body>
 </html>

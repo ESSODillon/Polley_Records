@@ -20,29 +20,33 @@
     display: flex;
     height: 33px;
     width: 700px;
+    justify-content: space-evenly;
 
-    a {
+    div {
+      width: 200px;
       font-family: PoppinsReg;
       font-size: 20px;
-      text-decoration: none;
       text-align: center;
-      color: black;
-      letter-spacing: 1px;
+      
       justify-content: space-between;
+
+      a {      
+        letter-spacing: 1px;
+        color: black;
+        width: 150px;
+        text-decoration: none;
     }
 
-    span {
-      width: 30px;
     }
 
-    #home,
-    #connect,
-    #shout {
+    #homeLink,
+    #connectLink,
+    #shoutLink {
       border-bottom: 3px solid #ac3b61;
     }
 
-    #about,
-    #tech {
+    #aboutLink,
+    #techLink {
       border-bottom: 3px solid #173c69;
     }
 
@@ -50,24 +54,35 @@
       background-color: colors.$website_maroon;
       color: white;
     }
+    #homeLink:active {
+      color: white;
+    }
 
     #connect:active {
       background-color: colors.$website_maroon;
+    }
+    #connectLink:active {
       color: white;
     }
 
     #shout:active {
       background-color: colors.$website_maroon;
+    }
+    #shoutLink:active {
       color: white;
     }
 
     #about:active {
       background-color: colors.$website_navy;
+    }
+    #aboutLink:active {
       color: white;
     }
 
     #tech:active {
       background-color: colors.$website_navy;
+    }
+    #techLink:active {
       color: white;
     }
   }

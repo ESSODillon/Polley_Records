@@ -44,6 +44,10 @@ p {
   font-family: PoppinsItal;
   src: url(../css/fonts/Poppins/Poppins-Italic.ttf);
 }
+@font-face {
+  font-family: PoppinsBoldItal;
+  src: url(../css/fonts/Poppins/Poppins-BoldItalic.ttf);
+}
 .navWrapper {
   position: fixed;
   width: 100%;
@@ -66,46 +70,59 @@ p {
   display: flex;
   height: 33px;
   width: 700px;
+  justify-content: space-evenly;
 }
-.navWrapper .links a {
+.navWrapper .links div {
+  width: 200px;
   font-family: PoppinsReg;
   font-size: 20px;
-  text-decoration: none;
   text-align: center;
-  color: black;
-  letter-spacing: 1px;
   justify-content: space-between;
 }
-.navWrapper .links span {
-  width: 30px;
+.navWrapper .links div a {
+  letter-spacing: 1px;
+  color: black;
+  width: 150px;
+  text-decoration: none;
 }
-.navWrapper .links #home,
-.navWrapper .links #connect,
-.navWrapper .links #shout {
+.navWrapper .links #homeLink,
+.navWrapper .links #connectLink,
+.navWrapper .links #shoutLink {
   border-bottom: 3px solid #ac3b61;
 }
-.navWrapper .links #about,
-.navWrapper .links #tech {
+.navWrapper .links #aboutLink,
+.navWrapper .links #techLink {
   border-bottom: 3px solid #173c69;
 }
 .navWrapper .links #home:active {
   background-color: #ac3b61;
   color: white;
 }
+.navWrapper .links #homeLink:active {
+  color: white;
+}
 .navWrapper .links #connect:active {
   background-color: #ac3b61;
+}
+.navWrapper .links #connectLink:active {
   color: white;
 }
 .navWrapper .links #shout:active {
   background-color: #ac3b61;
+}
+.navWrapper .links #shoutLink:active {
   color: white;
 }
 .navWrapper .links #about:active {
   background-color: #173c69;
+}
+.navWrapper .links #aboutLink:active {
   color: white;
 }
 .navWrapper .links #tech:active {
   background-color: #173c69;
+}
+.navWrapper .links #techLink:active {
   color: white;
 }
 
@@ -202,12 +219,12 @@ p {
   height: 100%;
   left: 0px;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .AboutSection .leftSide h1 {
   margin-top: 150px;
   font-family: PoppinsBold;
   font-size: 54px;
+  width: 600px;
 }
 .AboutSection .leftSide p {
   margin-top: 20px;
@@ -217,37 +234,46 @@ p {
 .AboutSection .leftSide p span {
   font-family: PoppinsBold;
 }
-.AboutSection .leftSide .imgWrapper {
+.AboutSection .imgWrapper {
   position: relative;
+  width: 40%;
+  height: 100%;
 }
-.AboutSection .leftSide .imgWrapper img {
+.AboutSection .imgWrapper img {
   position: absolute;
   width: 626px;
   height: 417px;
   bottom: 0px;
 }
-.AboutSection .rightSide {
-  margin-top: 360px;
-  position: absolute;
-  width: 40%;
-  right: 0px;
-  color: white;
-}
-.AboutSection .rightSide .headerWrapper {
-  max-width: 457px;
+.AboutSection .headerWrapper {
+  max-width: 450px;
   width: 100%;
+  position: absolute;
   height: 139px;
+  top: 250px;
+  right: 0px;
   background-color: #eee2dc;
-  border-radius: 50px;
+  border-radius: 50px 0px 0px 50px;
 }
-.AboutSection .rightSide .headerWrapper h1 {
+.AboutSection .headerWrapper h1 {
+  margin-top: 40px;
+  margin-left: 25px;
   font-family: PoppinsBold;
   font-size: 35px;
   color: #ac3b61;
 }
+.AboutSection .rightSide {
+  position: absolute;
+  max-width: 450px;
+  width: 40%;
+  right: 0px;
+  top: 400px;
+  color: white;
+}
 .AboutSection .rightSide .explainText {
   font-family: PoppinsReg;
   font-size: 25px;
+  margin-top: 45px;
 }
 .AboutSection .rightSide .explainText span {
   font-family: PoppinsBold;
@@ -255,6 +281,7 @@ p {
 .AboutSection .rightSide .commentText {
   font-family: PoppinsItal;
   font-size: 20px;
+  margin-top: 80px;
 }
 
 .sub1 {
@@ -271,6 +298,29 @@ p {
   max-height: 200px;
   height: 100%;
   background-color: #173c69;
+  position: relative;
+}
+.sub2 img {
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 303px;
+  height: 145px;
+}
+.sub2 .rightSide {
+  position: absolute;
+  right: 100px;
+  top: 35px;
+  color: white;
+  font-family: PoppinsReg;
+}
+.sub2 .rightSide h1 {
+  font-size: 40px;
+}
+.sub2 .rightSide h1 span {
+  font-family: PoppinsBold;
+}
+.sub2 .rightSide p {
+  font-size: 20px;
 }
 
 .sub3 {
@@ -298,16 +348,198 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.sub4 h1 {
+  position: absolute;
+  margin-top: 50px;
+  font-family: PoppinsBoldItal;
+  color: white;
+  font-size: 54px;
+  width: 100%;
+  text-align: center;
 }
 
 .ConnectSection {
   height: 100vh;
   background-color: #eee2dc;
+  position: relative;
+}
+.ConnectSection h1 {
+  font-family: PoppinsReg;
+  font-size: 54px;
+  position: absolute;
+  right: 149px;
+  top: 120px;
+}
+.ConnectSection h1 span {
+  font-family: PoppinsBold;
+  color: #173c69;
+}
+.ConnectSection .tea {
+  position: absolute;
+  right: 40px;
+  top: 120px;
+  width: 109px;
+  height: 76px;
+  fill: #173c69;
+}
+.ConnectSection p {
+  right: 40px;
+  top: 250px;
+  position: absolute;
+  width: 515px;
+  font-size: 25px;
+  font-family: PoppinsReg;
+}
+.ConnectSection p span {
+  font-family: PoppinsBold;
+}
+.ConnectSection .iconsRow {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 400px;
+  right: 100px;
+}
+.ConnectSection .iconsRow .pandora {
+  width: 80px;
+  height: 50px;
+  margin-right: -20px;
+}
+.ConnectSection .iconsRow .spotify {
+  width: 50px;
+  height: 50px;
+}
+.ConnectSection .iconsRow .soundcloud {
+  width: 87px;
+  height: 50px;
+}
+.ConnectSection .slideshowWrapper {
+  position: absolute;
+  bottom: 100px;
+  left: 130px;
+  z-index: 6;
+}
+.ConnectSection .slideshowWrapper .imgSquare {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 7;
+}
+.ConnectSection .slideshowWrapper .imgSquare img {
+  width: 409px;
+  height: 409px;
+  z-index: 7;
+}
+.ConnectSection .slideshowWrapper .redSquare {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 409px;
+  height: 409px;
+  z-index: 6;
+  background-color: #ac3b61;
+}
+.ConnectSection .slideshowWrapper .blueSquare {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 409px;
+  height: 409px;
+  z-index: 5;
+  background-color: #173c69;
 }
 
 .TechSection {
   height: 100vh;
   background-color: #173c69;
+  color: white;
+  font-family: PoppinsReg;
+  position: relative;
+}
+.TechSection h1 {
+  position: absolute;
+  font-size: 54px;
+  top: 173px;
+  left: 115px;
+}
+.TechSection h1 span {
+  font-family: PoppinsBold;
+}
+.TechSection p {
+  position: absolute;
+  max-width: 577px;
+  height: 149px;
+  font-size: 25px;
+  top: 270px;
+  left: 115px;
+}
+.TechSection .buttonWrapper {
+  position: absolute;
+  top: 480px;
+  width: 500px;
+  left: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+.TechSection .buttonWrapper button {
+  border-radius: 50px;
+  height: 54px;
+  font-family: PoppinsBold;
+  font-size: 16px;
+  border: none;
+}
+.TechSection .buttonWrapper #under150 {
+  width: 135px;
+  color: white;
+  background-color: #ac3b61;
+}
+.TechSection .buttonWrapper #over500 {
+  width: 135px;
+  background-color: #eee2dc;
+  color: #ac3b61;
+}
+.TechSection .buttonWrapper #recommend {
+  width: 155px;
+  color: white;
+  background-color: #ac3b61;
+}
+.TechSection .playerWrapper {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.TechSection .playerWrapper .imgWrapper {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 5;
+}
+.TechSection .playerWrapper .imgWrapper img {
+  width: 598px;
+  height: 439px;
+}
+.TechSection .playerWrapper .redCircle {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  z-index: 4;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  background-color: #ac3b61;
+}
+.TechSection .playerWrapper .tanCircle {
+  position: absolute;
+  bottom: 140px;
+  right: 240px;
+  z-index: 3;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  background-color: #eee2dc;
 }
 
 .ShoutSection {
@@ -343,7 +575,7 @@ p {
   height: 75px;
   border-radius: 20px;
   font-size: 20px;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   font-family: PoppinsReg;
   padding-left: 25px;
   border: none;

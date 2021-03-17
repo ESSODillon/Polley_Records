@@ -1,4 +1,102 @@
 .TechSection {
   height: 100vh;
   background-color: colors.$website_navy;
+  color: white;
+  font-family: PoppinsReg;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    font-size: 54px;
+    top: 173px;
+    left: 115px;
+    span {
+      font-family: PoppinsBold;
+    }
+  }
+
+  p {
+    position: absolute;
+    max-width: 577px;
+    height: 149px;
+    font-size: 25px;
+    top: 270px;
+    left: 115px;
+  }
+
+  .buttonWrapper {
+    position: absolute;
+    top: 480px;
+    width: 500px;
+    left: 115px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      border-radius: 50px;
+      height: 54px;
+      font-family: PoppinsBold;
+      font-size: 16px;
+      border: none;
+      
+    }
+    
+    #under150 {
+      width: 135px;
+      color: white;
+      background-color: colors.$website_maroon;
+    }
+
+    #over500 {
+      width: 135px;
+      background-color: colors.$website_tan1;
+      color: colors.$website_maroon;
+    }
+
+    #recommend {
+      width: 155px;
+      color: white;
+      background-color: colors.$website_maroon;
+    }
+  }
+
+  .playerWrapper {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    .imgWrapper {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      z-index: 5;
+      img {
+        width: 598px;
+        height: 439px;
+      }
+    }
+    .redCircle {
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+      z-index: 4;
+      width: 267px;
+      height: 267px;
+      border-radius: 50%;
+      background-color: colors.$website_maroon;
+    }
+
+    .tanCircle {
+      position: absolute;
+      bottom: 140px;
+      right: 240px;
+      z-index: 3;
+      width: 267px;
+      height: 267px;
+      border-radius: 50%;
+      background-color: colors.$website_tan1;
+    }
+
+
+  }
 }
