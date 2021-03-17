@@ -2,6 +2,8 @@
 
 Firebase Server: https://polley-records.web.app/
 
+**Refer to Polley_Records.xd for Adobe XD Prototype file**
+
 **Design Justification:**
 Our subject area is a subscription service that sends you monthly vinyl records. Level of detail can be found through the presentation, and how we make our company and services easy to understand by a simple visit of our website. The expeceted benefits / response we hope to achieve are to create new record fans, and find a perfect algorithm to fit everyone's taste.
 
