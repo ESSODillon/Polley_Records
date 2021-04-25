@@ -9,12 +9,11 @@
     <!-- CDN File 2 for Sweet Alerts -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- The JavaScript page for programming Sweet Alerts  -->
-    <script src="js/alerts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     
     <title>Polley Records</title>
 </head>
-<body>
+<body onload="changeAlbum()">
     <div class="navWrapper">
         <div class="logo"><img src="assets/images/logo.png" alt="Polley Records"></div>
 
@@ -93,7 +92,7 @@
 
         <div class="slideshowWrapper">
             <div class="imgSquare">
-                <img src="/assets/albums/Album_1.png">  
+                <img id="albumSlide" >  
             </div>          
             <div class="redSquare"></div>
             <div class="blueSquare"></div>
@@ -150,5 +149,7 @@
             
 
     </div>
+    <script src="js/alerts.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
