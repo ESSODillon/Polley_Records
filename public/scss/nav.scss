@@ -2,9 +2,11 @@
   position: fixed;
   width: 100%;
   margin: 0 auto;
-  margin-top: 30px;
   z-index: 20;
+  background-color: colors.$website_tan1;
+  height: 127px;
   .logo {
+    margin-top: 15px;
     position: absolute;
     left: 30px;
     img {
@@ -15,7 +17,7 @@
 
   .links {
     position: absolute;
-    margin-top: 13px;
+    margin-top: 43px;
     right: 30px;
     display: flex;
     height: 33px;
@@ -24,19 +26,18 @@
 
     div {
       width: 200px;
-      font-family: PoppinsReg;
+      font-family: PoppinsSemiBold;
       font-size: 20px;
       text-align: center;
-      
+
       justify-content: space-between;
 
-      a {      
+      a {
         letter-spacing: 1px;
         color: black;
         width: 150px;
         text-decoration: none;
-    }
-
+      }
     }
 
     #homeLink,

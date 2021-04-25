@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 * button:focus {
   outline: none;
@@ -37,6 +38,10 @@ p {
   src: url(../css/fonts/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../css/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
   font-family: PoppinsBold;
   src: url(../css/fonts/Poppins/Poppins-Bold.ttf);
 }
@@ -52,10 +57,12 @@ p {
   position: fixed;
   width: 100%;
   margin: 0 auto;
-  margin-top: 30px;
   z-index: 20;
+  background-color: #eee2dc;
+  height: 127px;
 }
 .navWrapper .logo {
+  margin-top: 15px;
   position: absolute;
   left: 30px;
 }
@@ -65,7 +72,7 @@ p {
 }
 .navWrapper .links {
   position: absolute;
-  margin-top: 13px;
+  margin-top: 43px;
   right: 30px;
   display: flex;
   height: 33px;
@@ -74,7 +81,7 @@ p {
 }
 .navWrapper .links div {
   width: 200px;
-  font-family: PoppinsReg;
+  font-family: PoppinsSemiBold;
   font-size: 20px;
   text-align: center;
   justify-content: space-between;

@@ -3,19 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  // border: red 2px solid;
-
-  button:focus {
-    outline: none;
-  }
-
-  input:focus {
-    outline: none;
-  }
-
-  button:hover {
-    cursor: pointer;
-  }
+}
+* button:focus {
+  outline: none;
+}
+* input:focus {
+  outline: none;
+}
+* button:hover {
+  cursor: pointer;
 }
 
 html,
@@ -37,27 +33,18 @@ p {
   font-family: Moonglade;
   src: url(../css/fonts/MoongladeDemoBold-jOzM.ttf);
 }
-
 @font-face {
   font-family: PoppinsReg;
   src: url(../css/fonts/Poppins/Poppins-Regular.ttf);
 }
-
-@font-face {
-  font-family: PoppinsSemiBold;
-  src: url(../css/fonts/Poppins/Poppins-SemiBold.ttf);
-}
-
 @font-face {
   font-family: PoppinsBold;
   src: url(../css/fonts/Poppins/Poppins-Bold.ttf);
 }
-
 @font-face {
   font-family: PoppinsItal;
   src: url(../css/fonts/Poppins/Poppins-Italic.ttf);
 }
-
 @font-face {
   font-family: PoppinsBoldItal;
   src: url(../css/fonts/Poppins/Poppins-BoldItalic.ttf);
