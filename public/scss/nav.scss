@@ -130,6 +130,7 @@
         background-color: black;
         margin: auto;
         border-radius: 3px;
+        transition: all 0.25s cubic-bezier(0.57, 0.28, 0.25, 0.69);
       }
     }
   }
@@ -142,6 +143,19 @@
     }
 
     .navicon {
+      transform: translateX(-10px);
+    }
+    .navicon .middle {
+      background-color: transparent;
+      transform: scale(0);
+    }
+
+    .navicon .top {
+      transform: rotate(45deg) translate(19px, 6px);
+    }
+
+    .navicon .bottom {
+      transform: rotate(-45deg) translate(18px, -5px);
     }
   }
 }
