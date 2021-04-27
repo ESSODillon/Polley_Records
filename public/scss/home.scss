@@ -89,3 +89,32 @@
     }
   }
 }
+
+@media all and (max-width: 1169px) {
+  .HomeSection {
+    .rightSide {
+      margin-top: 120px;
+      .homeTitle {
+        font-size: 45px;
+      }
+      button {
+        margin-right: 65px;
+      }
+    }
+
+    .leftSide {
+      .circles {
+        .circle1 {
+          width: 290px;
+          height: 300px;
+        }
+
+        .circle2 {
+        }
+
+        .circle3 {
+        }
+      }
+    }
+  }
+}

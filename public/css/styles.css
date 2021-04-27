@@ -132,7 +132,49 @@ p {
 .navWrapper .links #techLink:active {
   color: white;
 }
+.navWrapper .navicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: none;
+}
 
+@media all and (max-width: 925px) {
+  .navWrapper .logo img {
+    width: 148px;
+    height: 85px;
+  }
+  .navWrapper .links {
+    right: 0px;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edc7b7;
+  }
+  .navWrapper .navicon {
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .navWrapper .navicon .line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    border-radius: 3px;
+  }
+}
+.navMobileView .navWrapper .links {
+  display: flex;
+}
 .HomeSection {
   height: 100vh;
   background-color: #eee2dc;
@@ -213,6 +255,21 @@ p {
   z-index: 3;
 }
 
+@media all and (max-width: 1169px) {
+  .HomeSection .rightSide {
+    margin-top: 120px;
+  }
+  .HomeSection .rightSide .homeTitle {
+    font-size: 45px;
+  }
+  .HomeSection .rightSide button {
+    margin-right: 65px;
+  }
+  .HomeSection .leftSide .circles .circle1 {
+    width: 290px;
+    height: 300px;
+  }
+}
 .AboutSection {
   height: 100vh;
   background-color: #ac3b61;
