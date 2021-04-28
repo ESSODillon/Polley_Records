@@ -29,7 +29,6 @@
       font-family: PoppinsSemiBold;
       font-size: 20px;
       text-align: center;
-
       justify-content: space-between;
 
       a {
@@ -140,6 +139,10 @@
   .navWrapper {
     .links {
       display: flex;
+
+      div {
+        font-size: 25px;
+      }
     }
 
     .navicon {

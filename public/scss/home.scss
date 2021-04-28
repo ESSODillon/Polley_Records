@@ -6,7 +6,8 @@
 
   .rightSide {
     width: 600px;
-    float: right;
+    position: absolute;
+    right: 0px;
     margin-top: 250px;
 
     .homeTitle {
@@ -90,10 +91,42 @@
   }
 }
 
-@media all and (max-width: 1169px) {
+@media all and (max-width: 1148px) {
   .HomeSection {
     .rightSide {
       margin-top: 120px;
+    }
+
+    .leftSide {
+      bottom: 100px;
+      width: 400px;
+      height: 360px;
+      .circles {
+        .circle1 {
+          width: 320px;
+          height: 300px;
+        }
+
+        .circle2 {
+          width: 240px;
+          height: 220px;
+        }
+
+        .circle3 {
+          width: 265px;
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 925px) {
+  .HomeSection {
+    .rightSide {
+      margin-top: 130px;
+      left: 25%;
+      width: 475px;
       .homeTitle {
         font-size: 45px;
       }
@@ -103,6 +136,9 @@
     }
 
     .leftSide {
+      left: 25%;
+      width: 380px;
+      height: 360px;
       .circles {
         .circle1 {
           width: 290px;
@@ -110,9 +146,14 @@
         }
 
         .circle2 {
+          top: 30px;
+          width: 180px;
+          height: 160px;
         }
 
         .circle3 {
+          width: 185px;
+          height: 180px;
         }
       }
     }

@@ -176,6 +176,9 @@ p {
 .navMobileView .navWrapper .links {
   display: flex;
 }
+.navMobileView .navWrapper .links div {
+  font-size: 25px;
+}
 .navMobileView .navWrapper .navicon {
   transform: translateX(-10px);
 }
@@ -198,7 +201,8 @@ p {
 }
 .HomeSection .rightSide {
   width: 600px;
-  float: right;
+  position: absolute;
+  right: 0px;
   margin-top: 250px;
 }
 .HomeSection .rightSide .homeTitle {
@@ -270,9 +274,33 @@ p {
   z-index: 3;
 }
 
-@media all and (max-width: 1169px) {
+@media all and (max-width: 1148px) {
   .HomeSection .rightSide {
     margin-top: 120px;
+  }
+  .HomeSection .leftSide {
+    bottom: 100px;
+    width: 400px;
+    height: 360px;
+  }
+  .HomeSection .leftSide .circles .circle1 {
+    width: 320px;
+    height: 300px;
+  }
+  .HomeSection .leftSide .circles .circle2 {
+    width: 240px;
+    height: 220px;
+  }
+  .HomeSection .leftSide .circles .circle3 {
+    width: 265px;
+    height: 240px;
+  }
+}
+@media all and (max-width: 925px) {
+  .HomeSection .rightSide {
+    margin-top: 130px;
+    left: 25%;
+    width: 475px;
   }
   .HomeSection .rightSide .homeTitle {
     font-size: 45px;
@@ -280,9 +308,23 @@ p {
   .HomeSection .rightSide button {
     margin-right: 65px;
   }
+  .HomeSection .leftSide {
+    left: 25%;
+    width: 380px;
+    height: 360px;
+  }
   .HomeSection .leftSide .circles .circle1 {
     width: 290px;
     height: 300px;
+  }
+  .HomeSection .leftSide .circles .circle2 {
+    top: 30px;
+    width: 180px;
+    height: 160px;
+  }
+  .HomeSection .leftSide .circles .circle3 {
+    width: 185px;
+    height: 180px;
   }
 }
 .AboutSection {
@@ -363,6 +405,21 @@ p {
   margin-top: 80px;
 }
 
+@media all and (max-width: 925px) {
+  .AboutSection .leftSide {
+    width: 80%;
+  }
+  .AboutSection .leftSide h1 {
+    font-size: 45px;
+  }
+  .AboutSection .imgWrapper img {
+    width: 530px;
+    height: 353px;
+  }
+  .AboutSection .rightSide {
+    width: 80%;
+  }
+}
 .sub1 {
   max-height: 400px;
   height: 100%;
